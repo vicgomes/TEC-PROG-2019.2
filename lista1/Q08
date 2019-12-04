@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+float somaDeFloats(float a, float b);
+
+int main(){
+    float a;
+    float b;
+    float resultado;
+
+    cout << "Insira aqui dois números reais:\n";
+    cin << a << b;
+
+    resultado = somaDeFloats(a,b);
+    cout << "O resultado da operacao e: " << resultado << endl; 
+    return 0;
+}
+
+float somaDeFloats(float a, float b){
+    if(a == b) return 2 * (a + b);
+    else return a + b;
+}

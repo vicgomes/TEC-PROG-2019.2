@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+bool criancasSorrindo(bool a, bool b);
+
+int main(){
+    bool joaoSorrindo;
+    bool mariaSorrindo;
+
+    cout << "Joao esta sorrindo?\n1.Sim\t0.Nao\n";
+    cin >> joaoSorrindo;
+    cout << "Maria esta sorrindo?\n1.Sim\t0.Nao\n";
+    cin >> mariaSorrindo;
+
+    if(criancasSorrindo(joaoSorrindo, mariaSorrindo) == 1) cout << "True\n";
+    else cout << "False\n";
+    return 0;
+}
+
+bool criancasSorrindo(bool a, bool b){
+    if(a == true and b == true) return 1;
+    if(a == false and b == false) return 1;
+    if(a != b) return 0;
+}

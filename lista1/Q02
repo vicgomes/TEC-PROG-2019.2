@@ -1,0 +1,15 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  cout << "Tamanho das variaveis:\n";
+  cout << "- Tamanho de uma int = " << sizeof(int) << "bytes.\n";
+  cout << "- Tamanho de uma short = " << sizeof(short) << "bytes.\n";
+  cout << "- Tamanho de uma long = " << sizeof(long) << "bytes.\n";
+  cout << "- Tamanho de uma char = " << sizeof(char) << "bytes.\n";
+  cout << "- Tamanho de uma float = " << sizeof(float) << "bytes.\n";
+  cout << "- Tamanho de uma double = " << sizeof(double) << "bytes.\n";
+  cout << "- Tamanho de uma bool = " << sizeof(bool) << "bytes.\n";
+  return 0;
+}

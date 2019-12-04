@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+string helloNome(string nome);
+
+int main(){
+    string aluno;
+    
+    cout << "Insira o nome do aluno: ";
+    cin >> aluno;
+
+    cout << helloNome(aluno) << "!!\n";
+    return 0;
+}
+
+string helloNome(string nome){
+    string cumprimento = "Ola ";
+    return cumprimento += nome;
+}

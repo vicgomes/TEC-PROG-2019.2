@@ -1,0 +1,31 @@
+#include <iostream>
+
+using namespace std;
+
+bool soma_28(int tam, int vetor[]);
+
+int main(){
+    int tam;
+    int vetor[tam];
+
+    cout << "Informe o tamanho do seu vetor: ";
+    cin >> tam;
+
+    cout << "Agora, insira seus valores.\n";
+    for(int x = 0;x < tam;x++) cin >> vetor[x];
+
+    if(soma_28(tam, vetor) == true) cout << "True\n";
+    else cout << "False\n";
+    return 0;
+}
+
+bool soma_28(int tam, int vetor[]){
+    int n2 = 0;
+    for(int k = 0;k < tam;k++){
+        if(vetor[k] == 2){
+            n2 += 2;
+        }
+    }
+    if(n2 == 8) return true;
+    else return false;
+}

@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int x = 13, tentativa;
+
+    cout << "Tente acertar um numero de 1 a 20.\n";
+    cin >> tentativa;
+
+    if(tentativa == x) cout << "PARABENS, voce acertou de primeira!!!\n";
+    else{
+        while(tentativa != x){
+            if(tentativa >= 10 and tentativa <= 12){
+                cout << "Esta esquentando, um pouco mais.\n";
+                cin >> tentativa;
+            }
+            if(tentativa >= 14 and tentativa <= 16){
+                cout << "Esta esquentando, um pouco menos.\n";
+                cin >> tentativa;
+            }
+            else{
+                cout << "Que pena ne, ta muito frio. Tente novamente\n";
+                cin >> tentativa;
+            }
+        }
+        if(tentativa == x) cout << "PARABENS, voce acertou!!!!";
+    }
+    return 0;
+}

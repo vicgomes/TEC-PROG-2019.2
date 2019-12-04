@@ -1,0 +1,22 @@
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+int main(){
+    string frase,line;
+    ofstream insercao;
+    ifstream a;
+
+    insercao.open("input.txt",ios::app);
+    cout << "Insira uma frase.\n";
+    cin >> frase;
+    insercao << frase;
+    insercao.close();
+    
+    a.open("input.txt",ios::app);
+    while(getline(a,line)) cout << line << endl;
+    a.close();
+
+    return 0;
+}

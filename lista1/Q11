@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+void quadrado(int &valor);
+
+int main(){
+    int valor;
+
+    cout << "Digite um valor para ter o seu valor elevado ao quadrado: ";
+    cin >> valor;
+    quadrado(valor);
+
+    cout << "O resultado e: " << valor << endl;
+    return 0;
+}
+
+void quadrado(int &valor){
+    valor = (valor * valor);
+}

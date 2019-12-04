@@ -1,0 +1,37 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  float n1, n2,res;
+  char op;
+  
+  cout << "Digite dois números de sua preferencia: \n";
+  cin >> n1 >> n2;
+  cout << "Agora,  diga qual operacao voce deseja realizar:";
+  cout << "   +   -   *   /\n";
+  cin >> op;
+
+  switch(op){
+    case '+':
+    res = n1 + n2;
+    cout << n1 << " + " << n2 << " = " << res << endl;
+    break;
+    case '-':
+    res = n1 - n2;
+    cout << n1 << " - " << n2 << " = " << res << endl;
+    break;
+    case '*':
+    res = n1 * n2;
+    cout << n1 << " x " << n2 << " = " << res << endl;
+    break;
+    case '/':
+    res = n1 / n2;
+    cout << n1 << " : " << n2 << " = " << res << endl;
+    break;
+    default:
+    cout << "Operacao invalida.\n";
+    break;
+  }
+  return 0;
+}
