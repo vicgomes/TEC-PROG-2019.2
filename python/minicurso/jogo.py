@@ -20,7 +20,7 @@ while tentativas >= rodadas:
             print('\nFOI LONGE PRA PORRA BOY, tai vissano é?')
             print('tu não cansa de ser um fracasso?')
             break
-        if chute < num_baitola:                                      # o elif dá um break em tudo a partir do momento que sua condição é satisfeita
+        if chute < num_baitola:                                      # elif -> break
             print('\nmenor que isso só teu pau!')
             print('tu não cansa de ser um fracasso?')
             break
